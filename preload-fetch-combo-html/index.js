@@ -53,6 +53,7 @@ const html = `
       <select name="fetchMode">
         <option value="cors">cors</option>
         <option value="no-cors">no-cors</option>
+        <option value="same-origin">same-origin</option>
       </select>
     </label>
     <label>credentials:

@@ -133,6 +133,7 @@ In this experiment, we test all of the following possible combinations:
 - `fetch` `mode`:
    - cors
    - no-cors
+   - same-origin
 - `fetch` `credentials`:
    - same-origin (default)
    - include
@@ -192,6 +193,7 @@ while the remaining columns show the observed behavior.
 | Different    | anonymous             | No                    | cors         | (default)          | No                    | cors                  | ✅ Yes                   | ✅ Yes                   | ✅ Yes                   |
 | Different    | anonymous             | No                    | cors         | include            | Yes                   | cors                  | ❌ No                    | ❌ No                    | ❌ No                    |
 | Different    | anonymous             | No                    | cors         | omit               | No                    | cors                  | ✅ Yes                   | ⚠️ No (same cookie&cors) | ✅ Yes                   |
+| Any          | Any                   | -                     | same-origin  | Any                | -                     | -                     | ❌ No                    | ❌ No                    | ❌ No                    |
 
 ---
 
